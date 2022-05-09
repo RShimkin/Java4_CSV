@@ -35,13 +35,6 @@ public class Person {
     
     @Override
     public String toString() {
-        return "Person{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
-                ", branch=" + branch +
-                ", salary=" + salary +
-                ", birthDate=" + birthDate +
-                '}';
+        return String.format("Person: %s(%s) %s %s %s %s", name, id.toString(), sex, birthDate, branch.toString(), salary.toString());
     }
 }
