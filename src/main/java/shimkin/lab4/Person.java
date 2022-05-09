@@ -32,4 +32,16 @@ public class Person {
         this.salary = Salary;
         this.birthDate = BDate;
     }
+    
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", branch=" + branch +
+                ", salary=" + salary +
+                ", birthDate=" + birthDate +
+                '}';
+    }
 }

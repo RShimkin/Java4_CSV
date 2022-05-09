@@ -5,6 +5,8 @@
 
 package shimkin.lab4;
 
+import java.util.List;
+
 /**
  *
  * @author User
@@ -12,6 +14,15 @@ package shimkin.lab4;
 public class Lab4 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        CSV reader = new CSV();
+        try {
+            List<Person> people = reader.LoadFile("foreign_names.csv");
+            for (Person person: people) {
+                System.out.println(person.toString());
+            }
+        }
+        catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 }
