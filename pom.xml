@@ -10,4 +10,4 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <exec.mainClass>shimkin.lab4.Lab4</exec.mainClass>
     </properties>
-</project>
+    </project>
